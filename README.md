@@ -79,8 +79,6 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
 - [Typescript](https://www.typescriptlang.org)
 - [Modern Javascript](https://javascript.info)
 - [HTML/CSS](https://www.w3schools.com/html/default.asp)
@@ -107,8 +105,7 @@ Project Link: [https://jonkarrer.github.io/Feedback-App/](https://jonkarrer.gith
 
 - [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 - [Img Shields](https://shields.io)
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Pages](https://pages.github.com)
+- [Frontend Mentor](https://www.frontendmentor.io/challenges/product-feedback-app-wbvUYqjR6)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
