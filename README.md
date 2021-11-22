@@ -1,109 +1,153 @@
-*Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*
+<!--
+*** Thanks for checking out the Feedback-App. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-*Looking for a shareable component template instead? You can [use SvelteKit for that as well](https://kit.svelte.dev/docs#packaging) or the older [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
----
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-# svelte app
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/jonkarrer/Feedback-App" >
+    <img src="assets/flame.svg" alt="Logo" width="150" height="150">
+  </a>
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+  <h3 align="center">Improv Recipes</h3>
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+  <p align="center">
+    An awesome Recipe App to keep track of your kitchen adventures.
+    <br />
+    <a href="https://github.com/jonkarrer/Feedback-App"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://jonkarrer.github.io/Feedback-App/">View Demo</a>
+    ·
+    <a href="https://github.com/jonkarrer/Feedback-App/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jonkarrer/Feedback-App/issues">Request Feature</a>
+  </p>
+</p>
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+<!-- ABOUT THE PROJECT -->
 
+## About The Project
 
-## Get started
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Install the dependencies...
+There are many great recipe apps already out there and I am not trying to compete. This was an exercise for my vanilla Javascript/Typescript skills. This will be for personal use mostly.
 
-```bash
-cd svelte-app
-npm install
-```
+Here are the Goals:
 
-...then start [Rollup](https://rollupjs.org):
+- Create an app that allows you to input, edit, and delete recipes.
+- Manipulate the local storage object to save user data. This can be replaced with auth and a db.
+- List all recipes and catagories on serperate pages :smile:
 
-```bash
-npm run dev
-```
+Play around and leave a star if you don't mind.
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+### Built With
 
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-## Building and running in production mode
+- [Typescript](https://www.typescriptlang.org)
+- [Modern Javascript](https://javascript.info)
+- [HTML/CSS](https://www.w3schools.com/html/default.asp)
 
-To create an optimised version of the app:
+<!-- GETTING STARTED -->
 
-```bash
-npm run build
-```
+## Getting Started
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+Simply go to the projects website and start using!
 
+<!-- ROADMAP -->
 
-## Single-page app mode
+## Roadmap
 
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
+See the [open issues](https://github.com/jonkarrer/Feedback-App/issues) for a list of proposed features (and known issues).
 
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
+<!-- CONTRIBUTING -->
 
-```js
-"start": "sirv public --single"
-```
+## Contributing
 
-## Using TypeScript
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-```bash
-node scripts/setupTypeScript.js
-```
+<!-- LICENSE -->
 
-Or remove the script via:
+## License
 
-```bash
-rm scripts/setupTypeScript.js
-```
+Distributed under the MIT License. See `LICENSE` for more information.
 
-If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need to set up `@rollup/plugin-alias` to tell Rollup to resolve the aliases. For more info, see [this StackOverflow question](https://stackoverflow.com/questions/63427935/setup-tsconfig-path-in-svelte).
+<!-- CONTACT -->
 
-## Deploying to the web
+## Contact
 
-### With [Vercel](https://vercel.com)
+Jon Karrer - karrerjon@gmail.com
 
-Install `vercel` if you haven't already:
+Project Link: [https://jonkarrer.github.io/Feedback-App/](https://jonkarrer.github.io/Feedback-App/)
 
-```bash
-npm install -g vercel
-```
+<!-- ACKNOWLEDGEMENTS -->
 
-Then, from within your project folder:
+## Acknowledgements
 
-```bash
-cd public
-vercel deploy --name my-project
-```
+- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+- [Img Shields](https://shields.io)
+- [Choose an Open Source License](https://choosealicense.com)
+- [GitHub Pages](https://pages.github.com)
 
-### With [surge](https://surge.sh/)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+[contributors-shield]: https://img.shields.io/github/contributors/jonkarrer/Feedback-App.svg?style=for-the-badge
+[contributors-url]: https://github.com/jonkarrer/Feedback-App/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jonkarrer/Feedback-App.svg?style=for-the-badge
+[forks-url]: https://github.com/jonkarrer/Feedback-App/network/members
+[stars-shield]: https://img.shields.io/github/stars/jonkarrer/Feedback-App.svg?style=for-the-badge
+[stars-url]: https://github.com/jonkarrer/Feedback-App/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jonkarrer/Feedback-App.svg?style=for-the-badge
+[issues-url]: https://github.com/jonkarrer/Feedback-App/issues
+[license-shield]: https://img.shields.io/github/license/jonkarrer/Feedback-App.svg?style=for-the-badge
+[license-url]: https://github.com/jonkarrer/Feedback-App/blob/master/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/jon-karrer-6b8a18186/
+[product-screenshot]: assets/screenshot.png
