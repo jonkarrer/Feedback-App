@@ -147,4 +147,4 @@ Project Link: [https://jonkarrer.github.io/Feedback-App/](https://jonkarrer.gith
 [license-url]: https://github.com/jonkarrer/Feedback-App/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jon-karrer-6b8a18186/
-[product-screenshot]: ./public/assets/preview.png
+[product-screenshot]: ./public/assets/preview.jpg
