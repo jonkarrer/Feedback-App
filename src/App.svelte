@@ -1,18 +1,20 @@
 <script lang="ts">
-
+	import Router, {location, link} from 'svelte-spa-router';
+	import MobileHeader from './components/MobileHeader.svelte';
+	import ActionBar from "./components/ActionBar/index.svelte"
+	import Home from "./index.svelte"
 </script>
 
-<main>
 
-</main>
+<MobileHeader />
+<ActionBar />
+
+<Router routes={{
+	'/': Home,
+
+}} />
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
 /*Md*/
 @media (min-width: 768px) {
 

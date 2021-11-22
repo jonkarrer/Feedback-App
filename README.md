@@ -25,7 +25,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jonkarrer/Feedback-App" >
-    <img src="./public/assets/favicon-32x32.png" alt="Logo" width="40" height="40">
+    <img src="./public/favicon-32x32.png" alt="Logo" width="40" height="40">
   </a>
 
   <h3 align="center">Feedback App</h3>

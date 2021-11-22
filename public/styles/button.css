@@ -1,0 +1,25 @@
+button {
+  --h: 44px;
+  --w: 158px;
+  height: var(--h);
+  width: var(--w);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 10px;
+  outline: none;
+
+  font: bold 14px Jost;
+
+  color: var(--text-base);
+}
+button.pink {
+  background-color: var(--pink);
+}
+button.pink:hover {
+  cursor: pointer;
+  background-color: #c75af6;
+}

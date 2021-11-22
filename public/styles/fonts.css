@@ -1,0 +1,16 @@
+h1 {
+  font: bold 18px Jost;
+  letter-spacing: -0.25px;
+  line-height: 26px;
+  color: var(--lt-navy);
+}
+
+/*Md*/
+@media (min-width: 768px) {
+  h1 {
+    font: bold 24px Jost;
+    letter-spacing: -0.33px;
+    line-height: 35px;
+    color: var(--lt-navy);
+  }
+}
