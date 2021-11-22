@@ -65,13 +65,13 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great recipe apps already out there and I am not trying to compete. This was an exercise for my vanilla Javascript/Typescript skills. This will be for personal use mostly.
+I leverage the [Svelte](https://svelte.dev/) framework to build a prodcut feedback app. This is a top level challenge from [Frontend Mentor](https://www.frontendmentor.io/profile/jonkarrer).
 
 Here are the Goals:
 
-- Create an app that allows you to input, edit, and delete recipes.
-- Manipulate the local storage object to save user data. This can be replaced with auth and a db.
-- List all recipes and catagories on serperate pages :smile:
+- Create an app that allows users to create, edit, delete, and comment on feedback.
+- Use a database to save and display data in realtime.
+- Organize feedback into catagories and types.
 
 Play around and leave a star if you don't mind.
 
@@ -84,36 +84,14 @@ This section should list any major frameworks that you built your project using.
 - [Typescript](https://www.typescriptlang.org)
 - [Modern Javascript](https://javascript.info)
 - [HTML/CSS](https://www.w3schools.com/html/default.asp)
+- [Svelte](https://svelte.dev/)
+- [Supabase](https://supabase.com/)
 
 <!-- GETTING STARTED -->
 
 ## Getting Started
 
 Simply go to the projects website and start using!
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-See the [open issues](https://github.com/jonkarrer/Feedback-App/issues) for a list of proposed features (and known issues).
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 
