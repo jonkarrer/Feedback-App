@@ -25,7 +25,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jonkarrer/Feedback-App" >
-    <img src="assets/favicon-32x32.png" alt="Logo" width="150" height="150">
+    <img src="./public/assets/favicon-32x32.png" alt="Logo" width="150" height="150">
   </a>
 
   <h3 align="center">Improv Recipes</h3>
