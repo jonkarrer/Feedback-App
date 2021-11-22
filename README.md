@@ -28,10 +28,10 @@
     <img src="./public/assets/favicon-32x32.png" alt="Logo" width="40" height="40">
   </a>
 
-  <h3 align="center">Improv Recipes</h3>
+  <h3 align="center">Feedback App</h3>
 
   <p align="center">
-    An awesome Recipe App to keep track of your kitchen adventures.
+    A SPA that keeps track of customer feedback.
     <br />
     <a href="https://github.com/jonkarrer/Feedback-App"><strong>Explore the docs »</strong></a>
     <br />
@@ -54,9 +54,6 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
@@ -150,4 +147,4 @@ Project Link: [https://jonkarrer.github.io/Feedback-App/](https://jonkarrer.gith
 [license-url]: https://github.com/jonkarrer/Feedback-App/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jon-karrer-6b8a18186/
-[product-screenshot]: assets/screenshot.png
+[product-screenshot]: ./public/assets/preview.png
