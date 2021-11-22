@@ -73,10 +73,6 @@ Here are the Goals:
 - Use a database to save and display data in realtime.
 - Organize feedback into catagories and types.
 
-Play around and leave a star if you don't mind.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
 ### Built With
 
 - [Typescript](https://www.typescriptlang.org)
