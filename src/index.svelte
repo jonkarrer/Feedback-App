@@ -1,19 +1,14 @@
 <script>
-  // your script goes here
-
-import Empty from "./components/Empty.svelte";
-
+  import Empty from "./components/Home/Empty.svelte";
 </script>
-
-<style>
-  main {
-    background: var(--lt-grey);
-    min-height: calc(100vh - 128px);
-
-
-  }
-</style>
 
 <main class="wrapper grid place-items-center">
   <Empty />
 </main>
+
+<style>
+  main {
+    background: var(--lt-grey);
+    min-height: 100vh;
+  }
+</style>
