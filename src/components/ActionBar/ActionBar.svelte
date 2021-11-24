@@ -12,11 +12,23 @@
 
 <style>
   .wrapper {
-    display: none;
+    background: var(--navy);
+    height: 56px;
+    position: absolute;
+    top: 72px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
   }
   /*Md*/
   @media (min-width: 768px) {
     .wrapper {
+      position: static;
+
       display: grid;
       grid: auto-flow / auto auto 1fr;
       gap: 40px;

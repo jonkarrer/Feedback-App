@@ -1,6 +1,7 @@
 <script lang="ts">
   import Navbar from "./Navbar.svelte";
-  import MobileActionBar from "../ActionBar/Mobile.svelte";
+  import Filter from "../ActionBar/Filter.svelte";
+  import AddFeedback from "../Shared/AddFeedback.svelte";
 
   let isMenuOpen = false;
 
@@ -30,7 +31,6 @@
       />
     </span>
   </div>
-  <MobileActionBar />
 </header>
 
 <style>
@@ -38,7 +38,10 @@
     width: 100%;
     position: fixed;
   }
+
   .wrapper {
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;

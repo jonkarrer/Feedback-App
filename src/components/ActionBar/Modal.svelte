@@ -2,7 +2,7 @@
   export let open = false;
 </script>
 
-<div class:open>
+<div data-test="modal" class:open>
   <span
     >Most Upvotes <img
       src="./assets/shared/icon-check.svg"

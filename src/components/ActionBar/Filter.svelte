@@ -10,7 +10,7 @@
   }
 </script>
 
-<div on:click={handleClick} class="flex items-center">
+<div data-test="filter" on:click={handleClick} class="flex items-center">
   <p>Sort by : <b>Most Upvotes</b></p>
 
   <svg class:rotate width="10" height="7" xmlns="http://www.w3.org/2000/svg">

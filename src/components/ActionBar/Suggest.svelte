@@ -8,14 +8,21 @@
 
 <style>
   div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 156px;
+    display: none;
   }
-  b {
-    font-size: 18px;
-    color: white;
+
+  /*Md*/
+  @media (min-width: 768px) {
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 156px;
+    }
+    b {
+      font-size: 18px;
+      color: white;
+    }
   }
 </style>

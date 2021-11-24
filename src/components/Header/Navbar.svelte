@@ -5,7 +5,7 @@
   export let open = false;
 </script>
 
-<nav class:open>
+<nav data-test="navbar" class:open>
   <div class="wrapper">
     <Catagories />
     <Roadmap />

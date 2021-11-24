@@ -1,18 +1,18 @@
 <script>
   import Empty from "./components/Home/Empty.svelte";
   import MobileHeader from "./components/Header/Mobile.svelte";
-  import DesktopActionBar from "./components/ActionBar/Desktop.svelte";
-  import DesktopHeader from "./components/Header/Desktop.svelte";
+
+  import Panel from "./components/Header/Panel.svelte";
+  import ActionBar from "./components/ActionBar/ActionBar.svelte";
 </script>
 
 <MobileHeader />
-
 <main>
   <div class="panel">
-    <DesktopHeader />
+    <Panel />
   </div>
   <div class="action">
-    <DesktopActionBar />
+    <ActionBar />
   </div>
   <div class="wrapper content">
     <Empty />
@@ -25,12 +25,12 @@
 
     min-height: 100vh;
 
-    padding: 0 24px;
     margin: auto;
   }
 
   .content {
     width: 100%;
+    padding: 0 24px;
   }
 
   /*Md*/
@@ -42,14 +42,16 @@
 
       padding: 56px 24px;
     }
-
+    .panel,
+    .action,
+    .content {
+      width: 100%;
+    }
     .action {
       margin-top: 40px;
-      width: 100%;
     }
     .content {
       margin-top: 24px;
-      width: 100%;
     }
   }
   /*Lg*/
