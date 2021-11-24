@@ -52,6 +52,7 @@
     }
     .content {
       margin-top: 24px;
+      background: white;
     }
   }
   /*Lg*/
