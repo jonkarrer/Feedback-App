@@ -22,7 +22,6 @@
 <style>
   main {
     display: grid;
-    place-items: center;
 
     min-height: 100vh;
 
@@ -32,7 +31,6 @@
 
   .three {
     width: 100%;
-    margin-top: 128px;
   }
 
   /*Md*/
