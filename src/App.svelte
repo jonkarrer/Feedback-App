@@ -1,10 +1,7 @@
 <script lang="ts">
   import Router, { location, link } from "svelte-spa-router";
-  import MobileHeader from "./components/Header/MobileHeader.svelte";
   import Home from "./index.svelte";
 </script>
-
-<MobileHeader />
 
 <Router
   routes={{

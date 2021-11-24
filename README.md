@@ -31,7 +31,7 @@
   <h3 align="center">Feedback App</h3>
 
   <p align="center">
-    A SPA that keeps track of customer feedback.
+    A SPA that keeps track of customer feedback. Built with Svelte & tested with Playwright.
     <br />
     <a href="https://github.com/jonkarrer/Feedback-App"><strong>Explore the docs »</strong></a>
     <br />
@@ -72,14 +72,16 @@ Here are the Goals:
 - Create an app that allows users to create, edit, delete, and comment on feedback.
 - Use a database to save and display data in realtime.
 - Organize feedback into catagories and types.
+- Allow comments on feedback.
 
 ### Built With
 
+- [Svelte](https://svelte.dev/)
+- [Supabase](https://supabase.com/)
+- [Playwright](https://playwright.dev/)
 - [Typescript](https://www.typescriptlang.org)
 - [Modern Javascript](https://javascript.info)
 - [HTML/CSS](https://www.w3schools.com/html/default.asp)
-- [Svelte](https://svelte.dev/)
-- [Supabase](https://supabase.com/)
 
 <!-- GETTING STARTED -->
 

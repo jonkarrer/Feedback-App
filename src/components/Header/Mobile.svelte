@@ -1,7 +1,7 @@
 <script lang="ts">
   import Navbar from "./Navbar.svelte";
   import ActionBar from "../ActionBar/index.svelte";
-  let isMenuOpen = false;
+  let isMenuOpen = true;
 
   function handleClick() {
     isMenuOpen = !isMenuOpen;
@@ -60,5 +60,12 @@
     font-weight: 500;
     font-size: 13px;
     color: var(--text-opacity-75);
+  }
+
+  /*Md*/
+  @media (min-width: 768px) {
+    header {
+      display: none;
+    }
   }
 </style>
