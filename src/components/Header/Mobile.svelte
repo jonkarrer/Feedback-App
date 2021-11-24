@@ -1,7 +1,8 @@
 <script lang="ts">
   import Navbar from "./Navbar.svelte";
-  import ActionBar from "../ActionBar/index.svelte";
-  let isMenuOpen = true;
+  import MobileActionBar from "../ActionBar/Mobile.svelte";
+
+  let isMenuOpen = false;
 
   function handleClick() {
     isMenuOpen = !isMenuOpen;
@@ -29,7 +30,7 @@
       />
     </span>
   </div>
-  <ActionBar />
+  <MobileActionBar />
 </header>
 
 <style>
@@ -40,6 +41,8 @@
   .wrapper {
     height: 72px;
     width: 100%;
+    padding: 0 24px;
+
     background: radial-gradient(
       128.88% 150.88% at 103.9% 1%,
       #e84d70 0%,

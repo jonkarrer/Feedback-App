@@ -23,7 +23,6 @@
     border-radius: 10px;
     height: 460px;
     width: 100%;
-    margin-top: 128px;
   }
   p {
     font-size: 13px;
@@ -45,9 +44,6 @@
   }
   /*Md*/
   @media (min-width: 768px) {
-    article {
-      margin-top: 0;
-    }
     p {
       width: 410px;
       font-size: 16px;

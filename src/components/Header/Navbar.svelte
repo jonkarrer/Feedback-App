@@ -20,7 +20,7 @@
     bottom: 0;
     right: 0;
 
-    height: calc(100vh - 72px);
+    height: 100vh;
     width: 100%;
 
     background: rgba(0, 0, 0, 0.5);
@@ -39,6 +39,7 @@
 
     width: 271px;
     height: 100%;
+    padding: 0 24px;
     padding-top: 24px;
 
     background: var(--lt-grey);

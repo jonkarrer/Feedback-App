@@ -21,9 +21,11 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  --page-padding-x: 24px;
-  padding: 0 var(--page-padding-x);
+/*Md*/
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 689px;
+  }
 }
 
 :root {

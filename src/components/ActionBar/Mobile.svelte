@@ -3,9 +3,7 @@
   import AddFeedback from "../Shared/AddFeedback.svelte";
 </script>
 
-<!-- markup (zero or more items) goes here -->
-
-<div class="wrapper flex items-center justify-between">
+<div class="wrapper">
   <Filter />
   <AddFeedback />
 </div>
@@ -16,5 +14,11 @@
     height: 56px;
     position: absolute;
     width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
   }
 </style>

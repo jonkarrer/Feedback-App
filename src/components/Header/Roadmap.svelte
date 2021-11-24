@@ -67,4 +67,11 @@
     display: grid;
     gap: 8px;
   }
+
+  /*Md*/
+  @media (min-width: 768px) {
+    menu {
+      margin-top: 0;
+    }
+  }
 </style>
