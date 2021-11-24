@@ -1,6 +1,8 @@
 button {
   --h: 44px;
   --w: 158px;
+  --font: 14px;
+
   height: var(--h);
   width: var(--w);
 
@@ -12,7 +14,8 @@ button {
   border-radius: 10px;
   outline: none;
 
-  font: bold 14px Jost;
+  font-size: var(--font);
+  font-weight: bold;
 
   color: var(--text-base);
 }

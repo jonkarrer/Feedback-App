@@ -1,9 +1,11 @@
 <script>
   import Filter from "./Filter.svelte";
   import AddFeedback from "../Shared/AddFeedback.svelte";
+  import Suggest from "./Suggest.svelte";
 </script>
 
 <div class="wrapper">
+  <Suggest />
   <Filter />
   <AddFeedback />
 </div>
@@ -15,9 +17,12 @@
   /*Md*/
   @media (min-width: 768px) {
     .wrapper {
-      display: flex;
+      display: grid;
+      grid: auto-flow / auto auto 1fr;
+      gap: 40px;
+
       align-items: center;
-      justify-content: space-between;
+      justify-items: flex-end;
 
       border-radius: 10px;
 
