@@ -36,4 +36,11 @@
     padding: 0 17px;
     margin-right: 10px;
   }
+  /*Lg*/
+  @media (min-width: 1024px) {
+    menu {
+      width: 100%;
+      height: 166px;
+    }
+  }
 </style>

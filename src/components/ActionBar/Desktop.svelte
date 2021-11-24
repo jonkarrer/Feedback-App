@@ -29,7 +29,7 @@
       height: 72px;
       width: 100%;
       padding: 0 12px;
-      margin-top: 40px;
+      margin: auto;
 
       background: var(--navy);
     }

@@ -27,4 +27,13 @@
     font-size: 13px;
     color: var(--text-opacity-75);
   }
+  /*Lg*/
+  @media (min-width: 1024px) {
+    div {
+      height: 137px;
+      width: 100%;
+      background: center / cover
+        url("../assets/suggestions/desktop/background-header.png");
+    }
+  }
 </style>

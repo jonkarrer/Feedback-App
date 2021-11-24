@@ -74,4 +74,11 @@
       margin-top: 0;
     }
   }
+  /*Lg*/
+  @media (min-width: 1024px) {
+    menu {
+      width: 100%;
+      height: 178px;
+    }
+  }
 </style>

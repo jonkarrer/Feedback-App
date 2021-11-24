@@ -20,6 +20,16 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+      margin: auto;
+    }
+  }
+  /*Lg*/
+  @media (min-width: 1024px) {
+    header {
+      flex-direction: column;
+
+      width: 255px;
+      height: 529px;
     }
   }
 </style>
