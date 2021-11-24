@@ -39,6 +39,10 @@
     position: fixed;
   }
   .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     height: 72px;
     width: 100%;
     padding: 0 24px;
@@ -49,10 +53,6 @@
       #a337f6 53.09%,
       #28a7ed 100%
     );
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
   h6 {
     font-weight: bold;

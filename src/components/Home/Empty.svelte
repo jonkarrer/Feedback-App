@@ -19,16 +19,18 @@
 
 <style>
   article {
-    background: white;
-    border-radius: 10px;
     height: 460px;
     width: 100%;
+
+    background: white;
+    border-radius: 10px;
   }
   p {
     font-size: 13px;
     color: #647196;
-    width: 278px;
     text-align: center;
+
+    width: 278px;
     margin-top: 14px;
   }
   img,

@@ -10,16 +10,15 @@
 <style>
   menu {
     display: flex;
-
     flex-wrap: wrap;
-
-    background: white;
-    border-radius: 10px;
 
     width: 223px;
     height: 178px;
     padding: 24px 0px;
     padding-left: 24px;
+
+    background: white;
+    border-radius: 10px;
   }
 
   span {

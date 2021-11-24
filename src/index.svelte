@@ -1,20 +1,20 @@
 <script>
-  import Empty from "./components/Home/Empty.svelte";
-  import MobileHeader from "./components/Header/Mobile.svelte";
-  import DesktopActionBar from "./components/ActionBar/Desktop.svelte";
-  import DesktopHeader from "./components/Header/Desktop.svelte";
+  import Empty from "./comppanelnts/Home/Empty.svelte";
+  import MobileHeader from "./comppanelnts/Header/Mobile.svelte";
+  import DesktopActionBar from "./comppanelnts/ActionBar/Desktop.svelte";
+  import DesktopHeader from "./comppanelnts/Header/Desktop.svelte";
 </script>
 
 <MobileHeader />
 
 <main>
-  <div class="one">
+  <div class="panel">
     <DesktopHeader />
   </div>
-  <div class="two">
+  <div class="action">
     <DesktopActionBar />
   </div>
-  <div class="wrapper three">
+  <div class="wrapper content">
     <Empty />
   </div>
 </main>
@@ -29,7 +29,7 @@
     margin: auto;
   }
 
-  .three {
+  .content {
     width: 100%;
   }
 
@@ -42,15 +42,12 @@
 
       padding: 56px 24px;
     }
-    .three {
-      margin-top: 24px;
-    }
-    .two {
+
+    .action {
       margin-top: 40px;
-      width: 100%;
     }
-    .one {
-      width: 100%;
+    .content {
+      margin-top: 24px;
     }
   }
   /*Lg*/
@@ -63,20 +60,21 @@
 
       max-width: 1110px;
     }
-    .one {
+    .panel {
       grid-row: 1 / span 2;
     }
-    .two {
-      margin-top: 0;
-      width: 100%;
-    }
-    .three {
-      margin-top: 0;
 
-      height: 100%;
-      background: white;
+    .content {
       display: flex;
       align-items: center;
+
+      height: 100%;
+
+      background: white;
+    }
+    .action,
+    .content {
+      margin-top: 0;
     }
   }
 </style>

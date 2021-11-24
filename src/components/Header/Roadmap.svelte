@@ -25,17 +25,17 @@
 
 <style>
   menu {
-    background: white;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     width: 223px;
     height: 178px;
     padding: 24px;
     margin-top: 24px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background: white;
+    border-radius: 10px;
   }
   h6 {
     font-size: 18px;
