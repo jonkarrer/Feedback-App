@@ -67,7 +67,9 @@
     display: grid;
     gap: 8px;
   }
-
+  a:hover {
+    color: #8397f8;
+  }
   /*Md*/
   @media (min-width: 768px) {
     menu {

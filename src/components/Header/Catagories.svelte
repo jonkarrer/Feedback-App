@@ -35,6 +35,10 @@
     padding: 0 17px;
     margin-right: 10px;
   }
+  span:hover {
+    cursor: pointer;
+    background: #cfd7ff;
+  }
   /*Lg*/
   @media (min-width: 1024px) {
     menu {
