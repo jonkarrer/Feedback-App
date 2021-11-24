@@ -1,8 +1,8 @@
 <script>
-  import Empty from "./comppanelnts/Home/Empty.svelte";
-  import MobileHeader from "./comppanelnts/Header/Mobile.svelte";
-  import DesktopActionBar from "./comppanelnts/ActionBar/Desktop.svelte";
-  import DesktopHeader from "./comppanelnts/Header/Desktop.svelte";
+  import Empty from "./components/Home/Empty.svelte";
+  import MobileHeader from "./components/Header/Mobile.svelte";
+  import DesktopActionBar from "./components/ActionBar/Desktop.svelte";
+  import DesktopHeader from "./components/Header/Desktop.svelte";
 </script>
 
 <MobileHeader />
@@ -45,9 +45,11 @@
 
     .action {
       margin-top: 40px;
+      width: 100%;
     }
     .content {
       margin-top: 24px;
+      width: 100%;
     }
   }
   /*Lg*/

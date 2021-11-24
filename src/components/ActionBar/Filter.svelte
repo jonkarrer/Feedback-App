@@ -1,10 +1,19 @@
-<script>
+<script lang="ts">
+  import Modal from "./Modal.svelte";
+
+  let isModalOpen = false;
+  let rotate = false;
+
+  function handleClick() {
+    isModalOpen = !isModalOpen;
+    rotate = !rotate;
+  }
 </script>
 
-<span class="flex items-center">
+<div on:click={handleClick} class="flex items-center">
   <p>Sort by : <b>Most Upvotes</b></p>
 
-  <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+  <svg class:rotate width="10" height="7" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M1 1l4 4 4-4"
       stroke="#ffffff"
@@ -13,9 +22,14 @@
       fill-rule="evenodd"
     />
   </svg>
-</span>
+
+  <Modal open={isModalOpen} />
+</div>
 
 <style>
+  div {
+    position: relative;
+  }
   p {
     color: #f2f4fe;
     font-size: 13px;
@@ -23,11 +37,16 @@
   svg {
     margin-left: 8px;
   }
-
+  .rotate {
+    transform: rotate(180deg);
+  }
   /*Md*/
   @media (min-width: 768px) {
     p {
       font-size: 14px;
+    }
+    div:hover {
+      cursor: pointer;
     }
   }
 </style>
