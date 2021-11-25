@@ -83,12 +83,6 @@ Here are the Goals:
 - [Modern Javascript](https://javascript.info)
 - [HTML/CSS](https://www.w3schools.com/html/default.asp)
 
-<!-- GETTING STARTED -->
-
-## Getting Started
-
-Simply go to the projects website and start using!
-
 <!-- CONTACT -->
 
 ## Contact
