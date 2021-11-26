@@ -1,20 +1,36 @@
 <script>
+  export let upvotes;
+
+  let switchColor = false;
+
+  function handleClick() {
+    switchColor = !switchColor;
+
+    upvotes += 1;
+
+    //Send new data to backend
+  }
 </script>
 
-<span class="upvotes"
+<span
+  style={`color: ${switchColor ? "white" : "#3a4374"}; background: ${
+    switchColor ? "var(--blue)" : ""
+  };`}
+  on:click={handleClick}
   ><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"
     ><path
+      stroke={`${switchColor ? "white" : "blue"}`}
       d="M1 6l4-4 4 4"
-      stroke="#4661E6"
       stroke-width="2"
       fill="none"
       fill-rule="evenodd"
     /></svg
-  ><slot /></span
->
+  >
+  {upvotes}
+</span>
 
 <style>
-  .upvotes {
+  span {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -30,9 +46,12 @@
     border-radius: 10px;
     background: var(--grey);
   }
+  span:hover {
+    background: #cfd7ff;
+  }
   /*Md*/
   @media (min-width: 768px) {
-    .upvotes {
+    span {
       order: 1;
 
       display: flex;

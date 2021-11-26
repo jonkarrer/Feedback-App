@@ -6,8 +6,6 @@
 
   let comments = data.comments === undefined ? "0" : data.comments.length;
   let catagory = data.category.charAt(0).toUpperCase() + data.category.slice(1);
-
-  function handleClick() {}
 </script>
 
 <article data-key={data.id}>
@@ -16,7 +14,7 @@
     <p>{data.description}</p>
     <div class="category">{catagory}</div>
   </div>
-  <Upvote>{data.upvotes}</Upvote>
+  <Upvote upvotes={data.upvotes} />
   <span class="comments"
     ><img
       src="./assets/shared/icon-comments.svg"
@@ -74,7 +72,6 @@
     background: var(--grey);
     margin-top: 4px;
   }
-
   .comments {
     justify-self: end;
   }
