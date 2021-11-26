@@ -3,15 +3,12 @@
   import { onMount } from "svelte";
   import Feedback from "./components/Home/Feedback.svelte";
   import getFeedback from "../utils/getFeedback";
-  import type { IFeedback } from "../utils/interfaces";
 
   let data;
 
   onMount(async () => {
     data = await getFeedback();
   });
-
-  $: console.log(data);
 </script>
 
 <MobileHeader />
@@ -35,10 +32,9 @@
 
 <style>
   main {
-    min-height: 100vh;
+    height: 100vh;
 
     margin: auto;
-
     padding-top: 128px;
   }
 
@@ -68,8 +64,9 @@
       margin-top: 40px;
     }
     .content {
-      margin-top: 24px;
-      background: white;
+      background: var(--lt-grey);
+
+      padding: 24px 0;
     }
   }
   /*Lg*/
@@ -87,12 +84,9 @@
     }
 
     .content {
-      display: flex;
-      align-items: center;
-
+      padding: 0;
       height: 100%;
-
-      background: white;
+      overflow: scroll;
     }
     .action,
     .content {
