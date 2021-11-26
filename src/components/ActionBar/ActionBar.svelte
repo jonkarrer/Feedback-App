@@ -14,7 +14,7 @@
   .wrapper {
     background: var(--navy);
     height: 56px;
-    position: absolute;
+    position: fixed;
     top: 72px;
     width: 100%;
 

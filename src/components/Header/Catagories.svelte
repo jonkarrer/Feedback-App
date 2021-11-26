@@ -24,6 +24,7 @@
   span {
     display: flex;
     align-items: center;
+
     border-radius: 10px;
     background: var(--grey);
 

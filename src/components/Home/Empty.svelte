@@ -22,6 +22,8 @@
     height: 460px;
     width: 100%;
 
+    align-self: center;
+
     background: white;
     border-radius: 10px;
   }

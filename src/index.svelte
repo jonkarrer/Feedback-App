@@ -1,9 +1,17 @@
-<script>
-  import Empty from "./components/Home/Empty.svelte";
-  import MobileHeader from "./components/Header/Mobile.svelte";
+<script lang="ts">
+  import { Empty, MobileHeader, Panel, ActionBar } from "./components/index";
+  import { onMount } from "svelte";
+  import Feedback from "./components/Home/Feedback.svelte";
+  import getFeedback from "../utils/getFeedback";
+  import type { IFeedback } from "../utils/interfaces";
 
-  import Panel from "./components/Header/Panel.svelte";
-  import ActionBar from "./components/ActionBar/ActionBar.svelte";
+  let data;
+
+  onMount(async () => {
+    data = await getFeedback();
+  });
+
+  $: console.log(data);
 </script>
 
 <MobileHeader />
@@ -15,22 +23,31 @@
     <ActionBar />
   </div>
   <div class="wrapper content">
-    <Empty />
+    {#if data}
+      {#each data as d}
+        <Feedback data={d} />
+      {/each}
+    {:else}
+      <Empty />
+    {/if}
   </div>
 </main>
 
 <style>
   main {
-    display: grid;
-
     min-height: 100vh;
 
     margin: auto;
+
+    padding-top: 128px;
   }
 
   .content {
+    display: grid;
+    gap: 16px;
+
     width: 100%;
-    padding: 0 24px;
+    padding: 32px 24px;
   }
 
   /*Md*/
