@@ -1,10 +1,13 @@
 <script lang="ts">
   import type { IFeedback } from "../../../utils/interfaces";
+  import Upvote from "./Upvote.svelte";
 
   export let data: IFeedback;
 
   let comments = data.comments === undefined ? "0" : data.comments.length;
   let catagory = data.category.charAt(0).toUpperCase() + data.category.slice(1);
+
+  function handleClick() {}
 </script>
 
 <article data-key={data.id}>
@@ -13,12 +16,7 @@
     <p>{data.description}</p>
     <div class="category">{catagory}</div>
   </div>
-  <span class="upvotes"
-    ><img
-      src="./assets/shared/icon-arrow-up.svg"
-      alt="icon up arrow"
-    />{data.upvotes}</span
-  >
+  <Upvote>{data.upvotes}</Upvote>
   <span class="comments"
     ><img
       src="./assets/shared/icon-comments.svg"
@@ -55,7 +53,6 @@
     color: #647196;
   }
   .category,
-  .upvotes,
   .comments {
     display: grid;
     grid-auto-flow: column;
@@ -77,12 +74,12 @@
     background: var(--grey);
     margin-top: 4px;
   }
-  .upvotes {
-    border-radius: 10px;
-    background: var(--grey);
-  }
+
   .comments {
     justify-self: end;
+  }
+  article:hover {
+    cursor: pointer;
   }
 
   /*Md*/
@@ -103,15 +100,6 @@
       flex-grow: 1;
       padding-left: 40px;
     }
-    .upvotes {
-      order: 1;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 53px;
-      width: 40px;
-    }
     .comments {
       order: 3;
       align-self: center;
@@ -122,8 +110,5 @@
     p {
       font-size: 16px;
     }
-  }
-  /*Lg*/
-  @media (min-width: 1024px) {
   }
 </style>
