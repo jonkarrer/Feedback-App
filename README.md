@@ -1,19 +1,3 @@
-<!--
-*** Thanks for checking out the Feedback-App. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -21,7 +5,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/jonkarrer/Feedback-App" >
@@ -31,7 +14,7 @@
   <h3 align="center">Feedback App</h3>
 
   <p align="center">
-    A SPA that keeps track of customer feedback. Built with Svelte & tested with Playwright.
+    A SPA that keeps track of customer feedback. Built with Svelte and Playwright testing.
     <br />
     <a href="https://github.com/jonkarrer/Feedback-App"><strong>Explore the docs »</strong></a>
     <br />
@@ -44,7 +27,6 @@
   </p>
 </p>
 
-<!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
@@ -59,13 +41,11 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
-
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-I leverage the [Svelte](https://svelte.dev/) framework to build a prodcut feedback app. This is a top level challenge from [Frontend Mentor](https://www.frontendmentor.io/profile/jonkarrer).
+I leverage the [Svelte](https://svelte.dev/) framework to build a prodcut feedback app. This is a top level challenge from [Frontend Mentor](https://www.frontendmentor.io/profile/jonkarrer). Can plug this feature into future projects.
 
 Here are the Goals:
 
@@ -74,16 +54,22 @@ Here are the Goals:
 - Organize feedback into catagories and types.
 - Allow comments on feedback.
 
+Here is what I learned:
+
+- How to route a SPA in Svelte
+- How to read, write, and modify a firebase database.
+- Using dynamic routes to display dynamic data.
+- Addjusting a core button component with CSS variables
+
 ### Built With
 
 - [Svelte](https://svelte.dev/)
-- [Supabase](https://supabase.com/)
+- [SPA Router](https://github.com/ItalyPaleAle/svelte-spa-router)
+- [Firebase](https://firebase.google.com/)
 - [Playwright](https://playwright.dev/)
 - [Typescript](https://www.typescriptlang.org)
 - [Modern Javascript](https://javascript.info)
 - [HTML/CSS](https://www.w3schools.com/html/default.asp)
-
-<!-- CONTACT -->
 
 ## Contact
 
@@ -91,16 +77,11 @@ Jon Karrer - karrerjon@gmail.com
 
 Project Link: [https://jonkarrer.github.io/Feedback-App/](https://jonkarrer.github.io/Feedback-App/)
 
-<!-- ACKNOWLEDGEMENTS -->
-
 ## Acknowledgements
 
 - [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 - [Img Shields](https://shields.io)
 - [Frontend Mentor](https://www.frontendmentor.io/challenges/product-feedback-app-wbvUYqjR6)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/jonkarrer/Feedback-App.svg?style=for-the-badge
 [contributors-url]: https://github.com/jonkarrer/Feedback-App/graphs/contributors

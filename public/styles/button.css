@@ -19,10 +19,17 @@ button {
 
   color: var(--text-base);
 }
+button:hover {
+  cursor: pointer;
+}
+
 button.pink {
   background-color: var(--pink);
 }
 button.pink:hover {
-  cursor: pointer;
   background-color: #c75af6;
+}
+
+button.blue {
+  background-color: #4661e6;
 }

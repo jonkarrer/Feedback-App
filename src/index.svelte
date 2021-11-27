@@ -1,13 +1,15 @@
 <script lang="ts">
+  import type { IFeedback } from "../utils/interfaces";
   import { Empty, MobileHeader, Panel, ActionBar } from "./components/index";
   import { onMount } from "svelte";
   import Feedback from "./components/Home/Feedback.svelte";
-  import getFeedback from "../utils/getFeedback";
+  import getProductRequests from "../utils/getProductRequests";
 
-  let data;
+  let data: Array<IFeedback>;
 
   onMount(async () => {
-    data = await getFeedback();
+    data = await getProductRequests();
+    console.log(data);
   });
 </script>
 
@@ -86,7 +88,7 @@
     .content {
       padding: 0;
       height: 100%;
-      overflow: scroll;
+      overflow-y: scroll;
     }
     .action,
     .content {

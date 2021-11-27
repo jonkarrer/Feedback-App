@@ -1,7 +1,7 @@
 import { ref, child, get } from "firebase/database";
-import database from "../utils/firebaseClient";
+import database from "./firebaseClient";
 
-export default async function getFeedback() {
+export default async function getProductRequests() {
   const dbRef = ref(database);
   let data = await get(child(dbRef, `productRequests/`))
     .then((snapshot) => {

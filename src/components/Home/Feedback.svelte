@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { push } from "svelte-spa-router";
   import type { IFeedback } from "../../../utils/interfaces";
   import Upvote from "./Upvote.svelte";
 
@@ -8,7 +9,7 @@
   let catagory = data.category.charAt(0).toUpperCase() + data.category.slice(1);
 </script>
 
-<article data-key={data.id}>
+<article data-key={data.id} on:click={() => push(`/request/${data.id}`)}>
   <div class="content">
     <h3>{data.title}</h3>
     <p>{data.description}</p>

@@ -1,14 +1,14 @@
 <script lang="ts">
+  import MobileHeader from "./components/Header/Mobile.svelte";
   import Router, { location, link } from "svelte-spa-router";
   import Home from "./index.svelte";
-
-
-  
+  import Request from "./Request.svelte";
 </script>
 
-      <Router
+<Router
   routes={{
     "/": Home,
+    "/request/:id": Request,
   }}
 />
 
