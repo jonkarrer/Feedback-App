@@ -12,4 +12,9 @@
     display: flex;
     justify-content: space-between;
   }
+  button {
+    --w: 119px;
+    --h: 40px;
+    --font: 13px;
+  }
 </style>

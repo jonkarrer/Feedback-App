@@ -4,6 +4,7 @@
   import getProductRequests from "../utils/getProductRequests";
   import Feedback from "./components/Home/Feedback.svelte";
   import Toolbar from "./components/Request/Toolbar.svelte";
+  import Comments from "./components/Request/Comments.svelte";
 
   export let params;
   let request: IFeedback;
@@ -12,6 +13,7 @@
     const data = await getProductRequests();
     const singleItem = await data.filter((item) => item.id == params.id);
     request = singleItem[0];
+    console.log(request);
   });
 </script>
 
@@ -19,6 +21,7 @@
   <Toolbar />
   {#if request}
     <Feedback data={request} />
+    <Comments comments={request.comments} />
   {:else}
     <h1>loading</h1>
   {/if}
@@ -32,11 +35,5 @@
 
     min-height: 100vh;
     padding: 24px;
-  }
-
-  button {
-    --w: 119px;
-    --h: 40px;
-    --font: 13px;
   }
 </style>
