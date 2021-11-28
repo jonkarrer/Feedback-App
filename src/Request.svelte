@@ -5,6 +5,7 @@
   import Feedback from "./components/Home/Feedback.svelte";
   import Toolbar from "./components/Request/Toolbar.svelte";
   import Comments from "./components/Request/Comments.svelte";
+  import AddComment from "./components/Request/AddComment.svelte";
 
   export let params;
   let request: IFeedback;
@@ -22,6 +23,7 @@
   {#if request}
     <Feedback data={request} />
     <Comments comments={request.comments} />
+    <AddComment />
   {:else}
     <h1>loading</h1>
   {/if}
@@ -33,7 +35,9 @@
     grid: 44px auto / 1fr;
     gap: 24px;
 
-    min-height: 100vh;
     padding: 24px;
+
+    max-width: 730px;
+    margin: auto;
   }
 </style>

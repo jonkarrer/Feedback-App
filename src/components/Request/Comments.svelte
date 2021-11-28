@@ -6,7 +6,7 @@
 </script>
 
 <section>
-  <h1>{comments.length} Comments</h1>
+  <h5>{comments.length} Comments</h5>
   {#each comments as c}
     <article>
       <span
@@ -26,7 +26,11 @@
 <style>
   section {
     background: white;
+
     padding: 24px;
+    height: fit-content;
+
+    border-radius: 10px;
   }
   article {
     display: grid;
@@ -49,6 +53,20 @@
   }
   .title {
     flex-grow: 1;
+  }
+  h5 {
+    color: #3a4374;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  h6 {
+    color: #3a4374;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 13px;
+    color: #647196;
   }
   a {
     font-size: 13px;
