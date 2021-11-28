@@ -37,7 +37,7 @@
     justify-content: space-between;
 
     width: 100%;
-    margin-top: 5px;
+    margin-top: 11px;
   }
   button {
     --w: 119px;

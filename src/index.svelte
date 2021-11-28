@@ -1,16 +1,11 @@
 <script lang="ts">
   import type { IFeedback } from "../utils/interfaces";
   import { Empty, MobileHeader, Panel, ActionBar } from "./components/index";
-  import { onMount } from "svelte";
+  import { feedback } from "../utils/store";
   import Feedback from "./components/Home/Feedback.svelte";
-  import getProductRequests from "../utils/getProductRequests";
 
   let data: Array<IFeedback>;
-
-  onMount(async () => {
-    data = await getProductRequests();
-    console.log(data);
-  });
+  $: data = $feedback;
 </script>
 
 <MobileHeader />

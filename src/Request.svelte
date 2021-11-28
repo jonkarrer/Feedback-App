@@ -1,21 +1,21 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import type { IFeedback } from "../utils/interfaces";
-  import getProductRequests from "../utils/getProductRequests";
+
   import Feedback from "./components/Home/Feedback.svelte";
   import Toolbar from "./components/Request/Toolbar.svelte";
   import Comments from "./components/Request/Comments.svelte";
   import AddComment from "./components/Request/AddComment.svelte";
+  import { feedback } from "../utils/store";
 
   export let params;
-  let request: IFeedback;
 
-  onMount(async () => {
-    const data = await getProductRequests();
-    const singleItem = await data.filter((item) => item.id == params.id);
-    request = singleItem[0];
-    console.log(request);
-  });
+  let request: IFeedback;
+  let data: Array<IFeedback>;
+
+  $: {
+    data = $feedback;
+    request = data.filter((item) => item.id == params.id).pop();
+  }
 </script>
 
 <main>
