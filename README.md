@@ -56,6 +56,7 @@ Here are the Goals:
 
 Here is what I learned:
 
+- Make an async store in svelte for a global databse.
 - How to route a SPA in Svelte
 - How to read, write, and modify a firebase database.
 - Using dynamic routes to display dynamic data.

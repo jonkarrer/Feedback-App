@@ -3,10 +3,15 @@
   import Replies from "./Replies.svelte";
 
   export let comments: Array<IComment>;
+
+  let replyCount = 0;
+  for (const c of comments) {
+    if (c.replies != undefined) replyCount += c.replies.length;
+  }
 </script>
 
 <section>
-  <h5>{comments.length} Comments</h5>
+  <h5>{comments.length + replyCount} Comments</h5>
   {#each comments as c}
     <article>
       <span
@@ -17,7 +22,7 @@
         </div>
         <a href="/">Reply</a>
       </span>
-      <p>{c.content}</p>
+      <p class="content">{c.content}</p>
       <Replies replies={c.replies} />
     </article>
   {/each}
@@ -32,10 +37,13 @@
 
     border-radius: 10px;
   }
+  h5 {
+    color: #3a4374;
+    font-size: 18px;
+    font-weight: bold;
+  }
   article {
-    display: grid;
-    gap: 16px;
-    border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.05) 1px solid;
     padding: 24px 0;
   }
   article:last-child {
@@ -54,23 +62,37 @@
   .title {
     flex-grow: 1;
   }
-  h5 {
-    color: #3a4374;
-    font-size: 18px;
-    font-weight: bold;
+
+  a,
+  h6,
+  p {
+    font-size: 13px;
   }
   h6 {
     color: #3a4374;
-    font-size: 13px;
+
     font-weight: bold;
   }
   p {
-    font-size: 13px;
     color: #647196;
   }
   a {
-    font-size: 13px;
     font-weight: 600;
     color: #4661e6;
+  }
+  .content {
+    margin-top: 6px;
+  }
+  /*Md*/
+  @media (min-width: 768px) {
+    img {
+      width: 40px;
+      border-radius: 100%;
+      margin-right: 32px;
+    }
+
+    .content {
+      margin-left: 74px;
+    }
   }
 </style>

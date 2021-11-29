@@ -5,6 +5,7 @@
 
 {#if replies}
   <section>
+    <div class="border" />
     {#each replies as r}
       <article>
         <span
@@ -15,7 +16,7 @@
           </div>
           <a href="/">Reply</a>
         </span>
-        <p><b>{r.replyingTo}</b> {r.content}</p>
+        <p class="content"><b>{r.replyingTo}</b> {r.content}</p>
       </article>
     {/each}
   </section>
@@ -25,17 +26,14 @@
 
 <style>
   section {
+    position: relative;
     display: grid;
     gap: 24px;
 
     padding-left: 24px;
+    margin-left: 16px;
 
-    border-left: rgba(0, 0, 0, 0.2) 1px solid;
-    margin-top: 8px;
-  }
-  article {
-    display: grid;
-    gap: 16px;
+    border-left: rgba(0, 0, 0, 0.05) 1px solid;
   }
   span {
     display: flex;
@@ -51,9 +49,36 @@
   b {
     color: var(--pink);
   }
-  a {
+  a,
+  h6,
+  p {
     font-size: 13px;
+  }
+  a {
     font-weight: 600;
     color: #4661e6;
+  }
+
+  h6 {
+    color: #3a4374;
+
+    font-weight: bold;
+  }
+  p {
+    color: #647196;
+  }
+  .content {
+    margin-top: 6px;
+  }
+  /*Md*/
+  @media (min-width: 768px) {
+    img {
+      width: 40px;
+      border-radius: 100%;
+      margin-right: 30px;
+    }
+    .content {
+      margin-left: 74px;
+    }
   }
 </style>

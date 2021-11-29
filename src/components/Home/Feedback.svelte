@@ -7,6 +7,14 @@
 
   let comments = data.comments === undefined ? "0" : data.comments.length;
   let catagory = data.category.charAt(0).toUpperCase() + data.category.slice(1);
+
+  if (comments != "0") {
+    let replyCount: any = 0;
+    for (const c of data.comments) {
+      if (c.replies != undefined) replyCount += c.replies.length;
+    }
+    comments = replyCount + comments;
+  }
 </script>
 
 <article data-key={data.id} on:click={() => push(`/request/${data.id}`)}>

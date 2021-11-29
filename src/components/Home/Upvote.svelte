@@ -46,9 +46,7 @@
     border-radius: 10px;
     background: var(--grey);
   }
-  span:hover {
-    background: #cfd7ff;
-  }
+
   /*Md*/
   @media (min-width: 768px) {
     span {
@@ -59,6 +57,9 @@
       justify-content: center;
       height: 53px;
       width: 40px;
+    }
+    span:hover {
+      background: #cfd7ff;
     }
   }
 </style>

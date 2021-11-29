@@ -14,4 +14,7 @@
     grid-auto-flow: column;
     gap: 16px;
   }
+  span:hover {
+    cursor: pointer;
+  }
 </style>
