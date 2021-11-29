@@ -81,7 +81,7 @@
     color: #4661e6;
   }
   .content {
-    margin-top: 6px;
+    margin-top: 16px;
   }
   /*Md*/
   @media (min-width: 768px) {

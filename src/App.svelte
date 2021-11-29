@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import { feedback } from "../utils/store";
   import Router from "svelte-spa-router";
-  import Home from "./index.svelte";
-  import Request from "./Request.svelte";
+  import Home from "./pages/index.svelte";
+  import Request from "./pages/Request.svelte";
+  import Edit from "./pages/Edit.svelte";
 
   $: console.log($feedback);
 </script>
@@ -12,6 +12,7 @@
   routes={{
     "/": Home,
     "/request/:id": Request,
+    "/edit/:id": Edit,
   }}
 />
 

@@ -13,6 +13,7 @@
     align-items: center;
     grid-auto-flow: column;
     gap: 16px;
+    width: max-content;
   }
   span:hover {
     cursor: pointer;

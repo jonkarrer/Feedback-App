@@ -33,3 +33,9 @@ button.pink:hover {
 button.blue {
   background-color: #4661e6;
 }
+button.navy {
+  background: #3a4374;
+}
+button.red {
+  background: #d73737;
+}

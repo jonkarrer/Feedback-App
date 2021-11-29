@@ -32,6 +32,7 @@
 
     padding-left: 24px;
     margin-left: 16px;
+    margin-top: 16px;
 
     border-left: rgba(0, 0, 0, 0.05) 1px solid;
   }
@@ -68,7 +69,7 @@
     color: #647196;
   }
   .content {
-    margin-top: 6px;
+    margin-top: 16px;
   }
   /*Md*/
   @media (min-width: 768px) {
@@ -78,7 +79,11 @@
       margin-right: 30px;
     }
     .content {
+      margin-top: 0;
       margin-left: 74px;
+    }
+    section {
+      margin-top: 0;
     }
   }
 </style>
