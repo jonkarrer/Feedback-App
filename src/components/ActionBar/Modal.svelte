@@ -36,7 +36,7 @@
     justify-content: space-between;
     font-size: 16px;
     color: #647196;
-    border-bottom: #979797 solid 1px;
+    border-bottom: rgba(124, 65, 65, 0.1) solid 1px;
     padding: 0 25px;
   }
   span:last-child {

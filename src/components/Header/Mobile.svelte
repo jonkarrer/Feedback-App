@@ -1,7 +1,5 @@
 <script lang="ts">
   import Navbar from "./Navbar.svelte";
-  import Filter from "../ActionBar/Filter.svelte";
-  import AddFeedback from "../Shared/AddFeedback.svelte";
 
   let isMenuOpen = false;
 

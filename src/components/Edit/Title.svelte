@@ -29,7 +29,8 @@
   }
   p,
   h6,
-  ::placeholder {
+  ::placeholder,
+  input {
     font-size: 13px;
     color: #3a4374;
     font-family: Jost, sans-serif;

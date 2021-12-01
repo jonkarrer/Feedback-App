@@ -1,7 +1,13 @@
-<div class="input-wrapper">
+<script>
+  export let status;
+</script>
+
+<div>
   <h6>Update Status</h6>
   <p>Change feature state</p>
-  <div class="dropdown"><p>Planned</p></div>
+  <div class="dropdown">
+    <p>{status.charAt(0).toUpperCase() + status.slice(1)}</p>
+  </div>
 </div>
 
 <style>
@@ -14,6 +20,9 @@
     border: none;
     border-radius: 10px;
     background: #f7f8fd;
+  }
+  .dropdown:hover {
+    cursor: pointer;
   }
   h6 {
     font-weight: bold;

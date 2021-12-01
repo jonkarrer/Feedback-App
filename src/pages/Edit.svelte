@@ -18,6 +18,9 @@
   }
 
   let title;
+  let catagory;
+  let status;
+  let description;
 </script>
 
 <main>
@@ -33,8 +36,8 @@
 
         <Title bind:title={request.title} />
         <Category bind:category={request.category} />
-        <Status />
-        <Detail description={request.description} />
+        <Status bind:status={request.status} />
+        <Detail bind:description={request.description} />
 
         <div class="button-wrapper">
           <button class="pink">Save Changes</button>
