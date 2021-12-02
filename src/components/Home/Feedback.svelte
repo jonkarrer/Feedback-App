@@ -47,7 +47,7 @@
   }
   .content {
     display: grid;
-
+    gap: 10px;
     grid-column: 1 / span 2;
   }
   h3 {

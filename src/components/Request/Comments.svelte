@@ -2,30 +2,36 @@
   import type { IComment } from "../../../utils/interfaces";
   import Replies from "./Replies.svelte";
 
-  export let comments: Array<IComment>;
+  export let comments: Array<IComment> | undefined;
 
   let replyCount = 0;
-  for (const c of comments) {
-    if (c.replies != undefined) replyCount += c.replies.length;
+  if (comments) {
+    for (const c of comments) {
+      if (c.replies != undefined) replyCount += c.replies.length;
+    }
   }
 </script>
 
 <section>
-  <h5>{comments.length + replyCount} Comments</h5>
-  {#each comments as c}
-    <article>
-      <span
-        ><img src={c.user.image} alt="user's profile" />
-        <div class="title">
-          <h6>{c.user.name}</h6>
-          <p>@{c.user.username}</p>
-        </div>
-        <a href="/">Reply</a>
-      </span>
-      <p class="content">{c.content}</p>
-      <Replies replies={c.replies} />
-    </article>
-  {/each}
+  {#if comments}
+    <h5>{comments.length + replyCount} Comments</h5>
+    {#each comments as c}
+      <article>
+        <span
+          ><img src={c.user.image} alt="user's profile" />
+          <div class="title">
+            <h6>{c.user.name}</h6>
+            <p>@{c.user.username}</p>
+          </div>
+          <a href="/">Reply</a>
+        </span>
+        <p class="content">{c.content}</p>
+        <Replies replies={c.replies} />
+      </article>
+    {/each}
+  {:else}
+    <h5>No comments</h5>
+  {/if}
 </section>
 
 <style>

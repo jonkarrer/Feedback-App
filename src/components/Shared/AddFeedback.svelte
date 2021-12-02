@@ -1,10 +1,14 @@
 <script>
+  import { push } from "svelte-spa-router";
+
   // your script goes here
 </script>
 
 <!-- markup (zero or more items) goes here -->
 
-<button class="pink">+ Add Feedback</button>
+<button class="pink" on:click={() => push("/addfeedback")}
+  >+ Add Feedback</button
+>
 
 <style>
   button {

@@ -1,9 +1,7 @@
 <script lang="ts">
   import { feedback } from "../utils/store";
   import Router from "svelte-spa-router";
-  import Home from "./pages/index.svelte";
-  import Request from "./pages/Request.svelte";
-  import Edit from "./pages/Edit.svelte";
+  import { Home, Request, Edit, AddFeedback, Roadmap } from "./pages/index";
 
   $: console.log($feedback);
 </script>
@@ -13,6 +11,8 @@
     "/": Home,
     "/request/:id": Request,
     "/edit/:id": Edit,
+    "/addfeedback": AddFeedback,
+    "/roadmap": Roadmap,
   }}
 />
 

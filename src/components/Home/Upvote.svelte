@@ -16,7 +16,10 @@
   style={`color: ${switchColor ? "white" : "#3a4374"}; background: ${
     switchColor ? "var(--blue)" : ""
   };`}
-  on:click={handleClick}
+  on:click={(e) => {
+    handleClick();
+    e.stopPropagation();
+  }}
   ><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"
     ><path
       stroke={`${switchColor ? "white" : "blue"}`}

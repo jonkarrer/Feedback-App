@@ -1,7 +1,11 @@
+<script>
+  import { push } from "svelte-spa-router";
+</script>
+
 <menu>
   <div class="title">
     <h6>Roadmap</h6>
-    <a href="/">View</a>
+    <div class="link" on:click={() => push("/roadmap")}>View</div>
   </div>
 
   <div class="groups">
@@ -42,7 +46,7 @@
     font-weight: bold;
     color: var(--lt-navy);
   }
-  a {
+  .link {
     text-decoration: underline;
     color: var(--blue);
   }
@@ -67,7 +71,7 @@
     display: grid;
     gap: 8px;
   }
-  a:hover {
+  .link:hover {
     color: #8397f8;
   }
   /*Md*/

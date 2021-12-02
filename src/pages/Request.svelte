@@ -22,7 +22,7 @@
   {#if request}
     <Toolbar requestId={request.id} />
     <Feedback data={request} />
-    <Comments comments={request.comments} />
+    <Comments comments={request.comments ? request.comments : undefined} />
     <AddComment />
   {:else}
     <h1>loading</h1>
