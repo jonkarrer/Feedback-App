@@ -1,11 +1,17 @@
 <script>
   export let description;
+  export let editDetail = description;
 </script>
 
 <div>
   <h6>Feedback Detail</h6>
   <p>Include any specific comments on what should be improved, added, etc.</p>
-  <textarea value={description} cols="30" rows="10" />
+  <textarea
+    on:change={(e) => (editDetail = e.currentTarget.value)}
+    value={description}
+    cols="30"
+    rows="10"
+  />
 </div>
 
 <style>

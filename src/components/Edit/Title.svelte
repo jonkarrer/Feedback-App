@@ -1,12 +1,13 @@
-<script>
+<script lang="ts">
   export let title;
+  export let editTitle = title;
 </script>
 
 <div>
-  <h6>{title}</h6>
+  <h6>Feature Title</h6>
   <p>Add a short, descriptive headline</p>
   <input
-    on:change={(e) => (title = e.target.value)}
+    on:change={(e) => (editTitle = e.currentTarget.value)}
     value={title}
     type="text"
   />

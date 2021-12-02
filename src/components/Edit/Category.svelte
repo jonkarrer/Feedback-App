@@ -1,6 +1,8 @@
 <script>
   export let category;
+  export let editCategory = category;
   category = category.charAt(0).toUpperCase() + category.slice(1);
+
   let options = ["Enhancement", "Bug", "Feature", "UI", "UX"];
 
   let toggle = false;
@@ -31,6 +33,7 @@
       <span
         on:click={(e) => {
           category = e.target.innerText;
+          editCategory = e.target.innerText;
           toggle = !toggle;
           rotate = !rotate;
         }}
@@ -48,6 +51,7 @@
 <style>
   section {
     position: relative;
+    z-index: 100;
   }
   .dropdown {
     display: flex;

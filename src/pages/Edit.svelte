@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { pop, push } from "svelte-spa-router";
   import type { IFeedback } from "../../utils/interfaces";
   import { feedback } from "../../utils/store";
   import {
@@ -10,17 +11,27 @@
   } from "../components/Edit/index";
 
   export let params: IFeedback;
+
   let request: IFeedback;
   let data: Array<IFeedback>;
+  let editTitle: string,
+    editCategory: string,
+    editStatus: string,
+    editDetail: string;
+
   $: {
     data = $feedback;
     request = data.filter((item) => item.id == params.id).pop();
   }
 
-  let title;
-  let catagory;
-  let status;
-  let description;
+  function handleSave() {
+    //Upsert new user data to firebase;
+    console.log(editTitle, editCategory, editStatus, editDetail);
+  }
+  function handleDelete() {
+    //Delete data from firebase
+    push("/");
+  }
 </script>
 
 <main>
@@ -34,15 +45,15 @@
         />
         <h1>Editing '{request.title}'</h1>
 
-        <Title bind:title={request.title} />
-        <Category bind:category={request.category} />
-        <Status bind:status={request.status} />
-        <Detail bind:description={request.description} />
+        <Title bind:editTitle title={request.title} />
+        <Category bind:editCategory category={request.category} />
+        <Status bind:editStatus status={request.status} />
+        <Detail bind:editDetail description={request.description} />
 
         <div class="button-wrapper">
-          <button class="pink">Save Changes</button>
-          <button class="navy">Cancel</button>
-          <button class="red">Delete</button>
+          <button class="pink" on:click={handleSave}>Save Changes</button>
+          <button class="navy" on:click={() => pop()}>Cancel</button>
+          <button class="red" on:click={handleDelete}>Delete</button>
         </div>
       </section>
     {:else}
