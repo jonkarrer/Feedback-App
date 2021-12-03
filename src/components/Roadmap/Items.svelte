@@ -1,7 +1,7 @@
 <script lang="ts">
   import { feedback } from "../../../utils/store";
   import type { IFeedback } from "../../../utils/interfaces";
-  import Feedback from "../Home/Feedback.svelte";
+  import Feedback from "./Feedback.svelte";
 
   export let status: string;
 
@@ -29,9 +29,9 @@
   }
 </script>
 
-<h1>{headtext}</h1>
-<p>{description}</p>
 <section>
+  <h1>{headtext}</h1>
+  <p class="description">{description}</p>
   {#if data}
     {#each data as request}
       <div id={status} class="card">
@@ -54,21 +54,27 @@
 
 <style>
   section {
-    padding: 24px 0;
+    padding-bottom: 24px;
   }
   span {
     display: flex;
-    padding: 0 24px;
+    padding: 0 16px;
     padding-top: 16px;
   }
   span p {
     margin-left: 16px;
+    color: #647196;
+    font-size: 13px;
+  }
+  p.description {
+    font-size: 14px;
+    color: #647196;
   }
   .card {
     --in-progress: "#ad1fea";
     --live: "red";
     --planned: "yellow";
-    margin-top: 16px;
+    margin-top: 24px;
     background: white;
 
     border-radius: 10px;
@@ -83,5 +89,29 @@
   }
   #planned {
     border-top-color: #f49f85;
+  }
+  h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3a4374;
+  }
+  @media (min-width: 768px) {
+    .card {
+      width: 223px;
+      margin-top: 16px;
+    }
+    section {
+      padding: 0;
+    }
+  }
+  /*Lg*/
+  @media (min-width: 1024px) {
+    .card {
+      width: 350px;
+      height: 272px;
+    }
+    span p {
+      font-size: 16px;
+    }
   }
 </style>

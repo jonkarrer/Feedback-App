@@ -53,14 +53,21 @@
       Live (1)
     </h6>
   </span>
-  <section>
+  <section class="mobile">
     <Items bind:status />
+  </section>
+  <section class="desktop">
+    <Items status="planned" />
+    <Items status="in-progress" />
+    <Items status="live" />
   </section>
 </main>
 
 <style>
+  .desktop {
+    display: none;
+  }
   main {
-    max-width: 1110px;
     margin: auto;
   }
   header {
@@ -115,5 +122,33 @@
   }
   section {
     padding: 24px;
+  }
+  /*Md*/
+  @media (min-width: 768px) {
+    .mobile,
+    .cata-wrapper {
+      display: none;
+    }
+    .desktop {
+      display: flex;
+      justify-content: space-between;
+    }
+    main {
+      max-width: 689px;
+    }
+    section {
+      padding: 24px 0;
+      margin: 0;
+    }
+    header {
+      margin-top: 56px;
+      border-radius: 10px;
+    }
+  }
+  /*Lg*/
+  @media (min-width: 1024px) {
+    main {
+      max-width: 1110px;
+    }
   }
 </style>
