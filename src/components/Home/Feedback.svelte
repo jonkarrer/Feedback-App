@@ -6,7 +6,7 @@
   export let data: IFeedback;
 
   let comments = data.comments === undefined ? "0" : data.comments.length;
-  let catagory = data.category.charAt(0).toUpperCase() + data.category.slice(1);
+  $: catagory = data.category.charAt(0).toUpperCase() + data.category.slice(1);
 
   if (comments != "0") {
     let replyCount: any = 0;
@@ -44,6 +44,8 @@
 
     background: white;
     border-radius: 10px;
+
+    margin-bottom: 16px;
   }
   .content {
     display: grid;

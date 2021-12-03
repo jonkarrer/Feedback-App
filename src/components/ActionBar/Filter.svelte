@@ -1,5 +1,6 @@
 <script lang="ts">
   import Modal from "./Modal.svelte";
+  import { sort } from "../../../utils/sortStore";
 
   let isModalOpen = false;
   let rotate = false;
@@ -8,10 +9,16 @@
     isModalOpen = !isModalOpen;
     rotate = !rotate;
   }
+
+  $: sortType = $sort;
+
+  function changeSortType(newType) {
+    sort.set(newType);
+  }
 </script>
 
 <div data-test="filter" on:click={handleClick} class="flex items-center">
-  <p>Sort by : <b>Most Upvotes</b></p>
+  <p>Sort by : <b>{sortType}</b></p>
 
   <svg class:rotate width="10" height="7" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -23,7 +30,7 @@
     />
   </svg>
 
-  <Modal open={isModalOpen} />
+  <Modal {changeSortType} open={isModalOpen} />
 </div>
 
 <style>

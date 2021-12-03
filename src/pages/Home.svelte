@@ -2,10 +2,26 @@
   import type { IFeedback } from "../../utils/interfaces";
   import { Empty, MobileHeader, Panel, ActionBar } from "../components/index";
   import { feedback } from "../../utils/store";
+  import { filter } from "../../utils/filterStore";
+  import { sort } from "../../utils/sortStore";
   import Feedback from "../components/Home/Feedback.svelte";
 
   let data: Array<IFeedback>;
-  $: data = $feedback;
+
+  $: data =
+    $filter === "all"
+      ? $feedback.sort((a, b) =>
+          $sort === "Most Upvotes"
+            ? b.upvotes - a.upvotes
+            : a.upvotes - b.upvotes
+        )
+      : $feedback
+          .filter((item) => item.category === $filter)
+          .sort((a, b) =>
+            $sort === "Most Upvotes"
+              ? b.upvotes - a.upvotes
+              : a.upvotes - b.upvotes
+          );
 </script>
 
 <MobileHeader />
@@ -36,8 +52,7 @@
   }
 
   .content {
-    display: grid;
-    gap: 16px;
+    display: block;
 
     width: 100%;
     padding: 32px 24px;

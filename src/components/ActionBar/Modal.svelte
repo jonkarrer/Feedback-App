@@ -1,17 +1,30 @@
 <script>
   export let open = false;
+  export let changeSortType;
+
+  let check = "Most Upvotes";
+
+  function handleClick(targetText) {
+    changeSortType(targetText);
+    check = targetText;
+  }
 </script>
 
 <div data-test="modal" class:open>
-  <span
+  <span on:click={(e) => handleClick(e.currentTarget.innerText)}
     >Most Upvotes <img
+      class={check === "Most Upvotes" ? "check" : "uncheck"}
       src="./assets/shared/icon-check.svg"
       alt="check icon"
     /></span
   >
-  <span>Least Upvotes</span>
-  <span>Most Comments</span>
-  <span>Least Comments</span>
+  <span on:click={(e) => handleClick(e.currentTarget.innerText)}
+    >Least Upvotes <img
+      class={check === "Least Upvotes" ? "check" : "uncheck"}
+      src="./assets/shared/icon-check.svg"
+      alt="check icon"
+    /></span
+  >
 </div>
 
 <style>
@@ -44,5 +57,12 @@
   }
   span:hover {
     color: #ad1fea;
+  }
+
+  .check {
+    display: block;
+  }
+  .uncheck {
+    display: none;
   }
 </style>
