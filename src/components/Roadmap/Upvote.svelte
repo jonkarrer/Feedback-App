@@ -49,4 +49,11 @@
     border-radius: 10px;
     background: var(--grey);
   }
+
+  /*Lg*/
+  @media (min-width: 1024px) {
+    span {
+      height: 40px;
+    }
+  }
 </style>

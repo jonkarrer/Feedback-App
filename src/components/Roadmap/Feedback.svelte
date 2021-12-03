@@ -98,5 +98,9 @@
     article {
       gap: 16px;
     }
+    .comments {
+      height: 40px;
+      font-size: 16px;
+    }
   }
 </style>

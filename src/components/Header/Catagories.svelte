@@ -1,10 +1,36 @@
+<script>
+  import { filter } from "../../../utils/filterStore";
+</script>
+
 <menu>
-  <span>All</span>
-  <span>UI</span>
-  <span>UX</span>
-  <span>Enhancement</span>
-  <span>Bug</span>
-  <span>Feature</span>
+  <span
+    on:click={() => filter.set("all")}
+    style={$filter === "all" ? "background: #4661E6; color: white" : ""}
+    >All</span
+  >
+  <span
+    on:click={() => filter.set("ui")}
+    style={$filter === "ui" ? "background: #4661E6; color: white" : ""}>UI</span
+  >
+  <span
+    on:click={() => filter.set("ux")}
+    style={$filter === "ux" ? "background: #4661E6; color: white" : ""}>UX</span
+  >
+  <span
+    on:click={() => filter.set("enhancement")}
+    style={$filter === "enhancement" ? "background: #4661E6; color: white" : ""}
+    >Enhancement</span
+  >
+  <span
+    on:click={() => filter.set("bug")}
+    style={$filter === "bug" ? "background: #4661E6; color: white" : ""}
+    >Bug</span
+  >
+  <span
+    on:click={() => filter.set("feature")}
+    style={$filter === "feature" ? "background: #4661E6; color: white" : ""}
+    >Feature</span
+  >
 </menu>
 
 <style>
