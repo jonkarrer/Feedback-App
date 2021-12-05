@@ -1,5 +1,5 @@
 <script>
-  export let r;
+  export let reply;
 
   let openReply = false;
   function handleReply() {
@@ -9,14 +9,14 @@
 
 <article>
   <span
-    ><img src={r.user.image} alt="user's profile" />
+    ><img src={reply.user.image} alt="user's profile" />
     <div class="title">
-      <h6>{r.user.name}</h6>
-      <p>@{r.user.username}</p>
+      <h6>{reply.user.name}</h6>
+      <p>@{reply.user.username}</p>
     </div>
     <div on:click={handleReply} class="reply-button">Reply</div>
   </span>
-  <p class="content"><b>{r.replyingTo}</b> {r.content}</p>
+  <p class="content"><b>{reply.replyingTo}</b> {reply.content}</p>
   <div class={openReply ? "make-reply" : "close-reply"}>
     <textarea cols="30" rows="10" />
     <button class="pink">Post Reply</button>
@@ -94,6 +94,7 @@
       margin-left: 16px;
     }
     .make-reply {
+      display: flex;
       margin-left: 74px;
       margin-top: 16px;
     }

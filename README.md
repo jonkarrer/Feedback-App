@@ -47,6 +47,8 @@
 
 I leverage the [Svelte](https://svelte.dev/) framework to build a prodcut feedback app. This is a top level challenge from [Frontend Mentor](https://www.frontendmentor.io/profile/jonkarrer). Can plug this feature into future projects.
 
+Completion Time: 36 hours.
+
 Here are the Goals:
 
 - Create an app that allows users to create, edit, delete, and comment on feedback.

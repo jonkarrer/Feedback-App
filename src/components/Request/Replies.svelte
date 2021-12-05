@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { IReply } from "../../../utils/interfaces";
   import Reply from "./Reply.svelte";
+
   export let replies: Array<IReply>;
 </script>
 
@@ -8,7 +9,7 @@
   <section>
     <div class="border" />
     {#each replies as r}
-      <Reply {r} />
+      <Reply reply={r} />
     {/each}
   </section>
 {:else}
