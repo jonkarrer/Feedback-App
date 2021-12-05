@@ -3,7 +3,9 @@
   <textarea placeholder="Type your comment here" rows="10" cols="25" />
   <span>
     <p>250 Characters left</p>
-    <button class="pink">Post Comment</button>
+    <button on:click={() => alert("Project is still in beta")} class="pink"
+      >Post Comment</button
+    >
   </span>
 </section>
 
@@ -25,6 +27,8 @@
     border-radius: 10px;
 
     background: #f7f8fd;
+
+    font-family: Jost, sans-serif;
   }
   textarea::placeholder {
     color: #8c92b3;

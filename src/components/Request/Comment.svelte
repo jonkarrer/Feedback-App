@@ -21,7 +21,9 @@
   <p class="content">{c.content}</p>
   <div class={openReply ? "make-reply" : "close-reply"}>
     <textarea cols="30" rows="10" />
-    <button class="pink">Post Reply</button>
+    <button on:click={() => alert("Project is still in beta")} class="pink"
+      >Post Reply</button
+    >
   </div>
   <Replies replies={c.replies} />
 </article>
