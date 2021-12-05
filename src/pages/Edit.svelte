@@ -27,9 +27,11 @@
   function handleSave() {
     //Upsert new user data to firebase;
     console.log(editTitle, editCategory, editStatus, editDetail);
+    alert("Project still in beta");
   }
   function handleDelete() {
     //Delete data from firebase
+    alert("Project still in beta");
     push("/");
   }
 </script>

@@ -9,7 +9,7 @@
   function handleSave() {
     //Create new user data to firebase;
     console.log(editTitle, editCategory, editDetail);
-    pop();
+    alert("Project still in beta");
   }
 </script>
 
