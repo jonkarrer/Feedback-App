@@ -45,7 +45,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-I leverage the [Svelte](https://svelte.dev/) framework to build a prodcut feedback app. This is a top level challenge from [Frontend Mentor](https://www.frontendmentor.io/profile/jonkarrer). Can plug this feature into future projects.
+I leverage the [Svelte](https://svelte.dev/) framework to build a prodcut feedback app. This is a top level challenge from [Frontend Mentor](https://www.frontendmentor.io/profile/jonkarrer). Can use this application in future projects.
 
 Completion Time: 36 hours.
 
@@ -58,11 +58,12 @@ Here are the Goals:
 
 Here is what I learned:
 
+- Write test with playwright.
 - Make an async store in svelte for a global databse.
 - How to route a SPA in Svelte
 - How to read, write, and modify a firebase database.
 - Using dynamic routes to display dynamic data.
-- Addjusting a core button component with CSS variables
+- Adjusting a core button component with CSS variables
 
 ### Built With
 
